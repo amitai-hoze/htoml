@@ -21,7 +21,7 @@ import           Data.Time.Format    (defaultTimeLocale, iso8601DateFormat,
                                       parseTimeM)
 #else
 import           Data.Time.Format    (parseTime)
-import           System.Locale       (defaultTimeLocale, iso8601DateFormat)
+import           Data.Time.Locale.Compat       (defaultTimeLocale, iso8601DateFormat)
 #endif
 
 import           Numeric             (readHex)
